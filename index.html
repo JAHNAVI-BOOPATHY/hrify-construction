@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d11">
+  <title>HRIFY Constructions | Building Tomorrow</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <a href="index.html" class="logo">
+    <img src="assets/images/hrify-logo.png" alt="HRIFY Construction">
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+  <nav class="navigation" id="navigation">
+    <a class="active" href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="services.html">SERVICES</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="clients.html">CLIENTS</a>
+    <a href="careers.html">CAREERS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-slide active"
+      style="--hero-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=85')">
+      <div class="hero-content">
+        <span class="hero-category"></span>
+        <h1>Building Spaces.<br>Creating Futures.</h1>
+        <a href="projects.html" class="hero-btn">KNOW MORE ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-slide"
+      style="--hero-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2200&q=85')">
+      <div class="hero-content">
+        <span class="hero-category"></span>
+        <h1>Strength in Design.<br>Excellence in Execution.</h1>
+        <a href="services.html" class="hero-btn">KNOW MORE ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-slide"
+      style="--hero-image:url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=2200&q=85')">
+      <div class="hero-content">
+        <span class="hero-category"></span>
+        <h1>Shaping Skylines.<br>Inspiring Tomorrow.</h1>
+        <a href="about.html" class="hero-btn">KNOW MORE ↗</a>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button id="prevSlide" aria-label="Previous slide">←</button>
+      <span id="slideCount">01 / 03</span>
+      <button id="nextSlide" aria-label="Next slide">→</button>
+    </div>
+  </section>
+
+
+<!-- SERVICES SECTION -->
+<section class="services-section" id="services">
+
+  <div class="services-heading">
+    <h2 aria-setsize="39px">Services</h2>
+    <a href="services.html" class="view-all">
+      View All <span>↗</span>
+    </a>
+  </div>
+
+  <div class="services-carousel" id="servicesCarousel">
+
+    <div class="services-track" id="servicesTrack">
+
+      <!-- SERVICE 1 -->
+      <article class="service-card">
+        <a href="services.html#civil" class="service-image">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85" alt="Civil and structural construction">
+          <div class="service-overlay"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 100 100">
+              <path d="M15 85V38L50 12L85 38V85M30 85V48H70V85M42 48V85M58 48V85M10 85H90M25 38H75"/>
+            </svg>
+          </div>
+          <span class="know-more">Know More ↗</span>
+        </a>
+        <div class="service-info">
+          <h3>Civil & Structural Engineering</h3>
+          <p>Delivering dependable structural solutions through thoughtful planning, precise engineering and quality construction practices.</p>
+        </div>
+      </article>
+
+      <!-- SERVICE 2 -->
+      <article class="service-card">
+        <a href="services.html#fire-safety" class="service-image">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85" alt="Fire protection engineering">
+          <div class="service-overlay"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 100 100">
+              <path d="M50 10C57 27 78 36 77 61C77 83 65 92 50 92C30 92 19 78 22 60C24 43 39 36 40 22C49 31 52 42 49 51C60 43 60 29 50 10Z"/>
+              <path d="M50 57C59 66 58 79 50 83C39 81 37 68 50 57Z"/>
+            </svg>
+          </div>
+          <span class="know-more">Know More ↗</span>
+        </a>
+        <div class="service-info">
+          <h3>Fire & Life Safety Solutions</h3>
+          <p>Creating safer environments with integrated fire protection, detection and life safety systems designed for modern buildings.</p>
+        </div>
+      </article>
+
+      <!-- SERVICE 3 -->
+      <article class="service-card">
+        <a href="services.html#electrical" class="service-image">
+          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=85" alt="Electrical engineering infrastructure">
+          <div class="service-overlay"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 100 100">
+              <path d="M57 8L25 55H47L40 92L77 42H54L57 8Z"/>
+              <path d="M12 22H28M72 78H90"/>
+            </svg>
+          </div>
+          <span class="know-more">Know More ↗</span>
+        </a>
+        <div class="service-info">
+          <h3>Electrical Engineering</h3>
+          <p>Developing reliable electrical infrastructure, efficient power distribution and intelligent lighting systems for every project.</p>
+        </div>
+      </article>
+
+      <!-- SERVICE 4 -->
+      <article class="service-card">
+        <a href="services.html#hvac" class="service-image">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=85" alt="Mechanical engineering and HVAC">
+          <div class="service-overlay"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="12"/>
+              <path d="M50 38C35 23 35 12 49 10C60 9 63 22 50 38ZM62 50C77 35 88 35 90 49C91 60 78 63 62 50ZM50 62C65 77 65 88 51 90C40 91 37 78 50 62ZM38 50C23 65 12 65 10 51C9 40 22 37 38 50Z"/>
+            </svg>
+          </div>
+          <span class="know-more">Know More ↗</span>
+        </a>
+        <div class="service-info">
+          <h3>HVAC & Mechanical Engineering</h3>
+          <p>Providing integrated heating, ventilation and air-conditioning solutions focused on comfort, performance and energy efficiency.</p>
+        </div>
+      </article>
+
+      <!-- SERVICE 5 -->
+      <article class="service-card">
+        <a href="services.html#public-health" class="service-image">
+          <img src="https://www.clarkconstruction.com/sites/default/files/styles/gallery_image/public/2023-03/9792_jpg.jpg?itok=oGa1k8lQ" alt="Public health engineering">
+          <div class="service-overlay"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 100 100">
+              <path d="M50 10C50 10 24 42 24 61A26 26 0 0 0 76 61C76 42 50 10 50 10Z"/>
+              <path d="M38 65C40 76 50 79 58 72"/>
+              <path d="M50 43V61M41 52H59"/>
+            </svg>
+          </div>
+          <span class="know-more">Know More ↗</span>
+        </a>
+        <div class="service-info">
+          <h3>Public Health Engineering</h3>
+          <p>Designing efficient water supply, drainage and sanitation systems that support healthy, functional building environments.</p>
+        </div>
+      </article>
+
+      <!-- SERVICE 6 -->
+      <article class="service-card">
+        <a href="services.html#green-building" class="service-image">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85" alt="Sustainable green architecture">
+          <div class="service-overlay"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 100 100">
+              <path d="M85 15C45 13 17 26 17 57C17 78 36 88 54 77C72 66 80 41 85 15Z"/>
+              <path d="M15 88C35 65 49 48 75 29M43 62L40 43M57 49L72 50"/>
+            </svg>
+          </div>
+          <span class="know-more">Know More ↗</span>
+        </a>
+        <div class="service-info">
+          <h3>Green Building Solutions</h3>
+          <p>Promoting responsible development through sustainable design strategies that improve resource efficiency and building performance.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="services-navigation">
+    <button id="servicesPrev" aria-label="Previous services">←</button>
+    <button id="servicesNext" aria-label="Next services">→</button>
+  </div>
+
+</section>
+
+
+<!-- DIRECTOR'S PROFILE SECTION -->
+<section class="director-section" id="director">
+
+  <div class="director-blue-panel"></div>
+
+  <div class="director-content">
+
+    <div class="director-details">
+      <span class="director-eyebrow">LEADERSHIP & VISION</span>
+
+      <h2 class="director-title">Director's Profile</h2>
+
+      <div class="director-text">
+        <h3>Jayakrishnan J</h3>
+        <span class="director-role">Founder & CEO</span>
+
+        <p>
+          <strong>Jayakrishnan J</strong> is the Founder and CEO
+          of HRIFY Constructions, guiding the organisation with
+          a commitment to professional excellence, responsible
+          development and customer-focused solutions.
+        </p>
+
+        <p>
+          With a vision to create meaningful spaces and deliver
+          dependable construction solutions, he leads the
+          organisation's strategic direction and business
+          development.
+        </p>
+
+        <p>
+          His leadership approach emphasises:
+        </p>
+
+        <ul class="director-highlights">
+          <li>Quality-driven project execution</li>
+          <li>Innovation and practical engineering solutions</li>
+          <li>Professional integrity and accountability</li>
+          <li>Long-term client relationships</li>
+        </ul>
+
+        <a href="about.html" class="director-more">
+          KNOW MORE <span>↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="director-photo-area">
+      <div class="director-photo-circle">
+        <img src="assets/images/ceo.png"
+             alt="Jayakrishnan J, Founder and CEO of HRIFY Constructions">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="promises-scroll-wrapper">
+<section class="promises-section" id="promises">
+
+  <div class="promises-heading">
+    <span>WHAT SETS US APART</span>
+    <h2>Our Promises</h2>
+  </div>
+
+  <div class="promises-viewport" id="promisesViewport">
+
+    <div class="promises-track" id="promisesTrack">
+
+      <!-- SLIDE 1 -->
+      <article class="promise-slide">
+        <div class="promise-visual visual-client">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85" alt="Modern commercial architecture">
+          <div class="promise-visual-overlay"></div>
+          <div class="promise-symbol">01</div>
+        </div>
+        <div class="promise-divider"></div>
+        <div class="promise-content">
+          <span class="promise-kicker">THE FOUNDATION OF OUR WORK</span>
+          <h3>Client-Focused</h3>
+          <p>We put your vision first, delivering tailored construction solutions that reflect your needs, expectations and project goals.</p>
+          <span class="promise-count">01 <i>/ 05</i></span>
+        </div>
+      </article>
+
+      <!-- SLIDE 2 -->
+      <article class="promise-slide">
+        <div class="promise-visual visual-value">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=85" alt="Architectural design and planning">
+          <div class="promise-visual-overlay"></div>
+          <div class="promise-symbol">02</div>
+        </div>
+        <div class="promise-divider"></div>
+        <div class="promise-content">
+          <span class="promise-kicker">SMARTER PROJECT SOLUTIONS</span>
+          <h3>Value Engineered</h3>
+          <p>We create cost-effective designs and practical solutions while maintaining the quality, performance and standards your project deserves.</p>
+          <span class="promise-count">02 <i>/ 05</i></span>
+        </div>
+      </article>
+
+      <!-- SLIDE 3 -->
+      <article class="promise-slide">
+        <div class="promise-visual visual-delivery">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=85" alt="Construction site and project execution">
+          <div class="promise-visual-overlay"></div>
+          <div class="promise-symbol">03</div>
+        </div>
+        <div class="promise-divider"></div>
+        <div class="promise-content">
+          <span class="promise-kicker">COMMITMENT YOU CAN COUNT ON</span>
+          <h3>On-Time Delivery</h3>
+          <p>Through effective coordination, careful scheduling and disciplined execution, we work towards delivering every project on time.</p>
+          <span class="promise-count">03 <i>/ 05</i></span>
+        </div>
+      </article>
+
+      <!-- SLIDE 4 -->
+      <article class="promise-slide">
+        <div class="promise-visual visual-futuristic">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1100&q=85" alt="Contemporary architectural building design">
+          <div class="promise-visual-overlay"></div>
+          <div class="promise-symbol">04</div>
+        </div>
+        <div class="promise-divider"></div>
+        <div class="promise-content">
+          <span class="promise-kicker">DESIGNED FOR TOMORROW</span>
+          <h3>Futuristic Design</h3>
+          <p>We embrace innovative thinking and modern design approaches to create functional spaces ready for the needs of tomorrow.</p>
+          <span class="promise-count">04 <i>/ 05</i></span>
+        </div>
+      </article>
+
+      <!-- SLIDE 5 -->
+      <article class="promise-slide">
+        <div class="promise-visual visual-quality">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1100&q=85" alt="Construction quality and engineering">
+          <div class="promise-visual-overlay"></div>
+          <div class="promise-symbol">05</div>
+        </div>
+        <div class="promise-divider"></div>
+        <div class="promise-content">
+          <span class="promise-kicker">EXCELLENCE IN EVERY DETAIL</span>
+          <h3>Quality & Reliability</h3>
+          <p>We are committed to dependable workmanship, consistent quality and responsible practices throughout every stage of construction.</p>
+          <span class="promise-count">05 <i>/ 05</i></span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+  <div class="promises-footer">
+    <div class="promises-instruction">
+      <span class="promise-scroll-icon">↕</span>
+      SCROLL TO EXPLORE OUR PROMISES
+    </div>
+
+    <div class="promises-controls">
+      <button type="button" id="promisePrev" aria-label="Previous promise">←</button>
+      <button type="button" id="promiseNext" aria-label="Next promise">→</button>
+    </div>
+  </div>
+
+</section>
+</div>
+
+
+<!-- GET IN TOUCH SECTION -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-heading">
+            <h2>Get in Touch with HRIFY Constructions</h2>
+            <p>
+                Thank you for your interest in HRIFY Constructions.
+                Share your requirements with us, and our team will
+                get in touch with you soon.
+            </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="contact-input-row">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="First Name"
+                    aria-label="First Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    aria-label="Last Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    aria-label="Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Contact Number"
+                    aria-label="Contact Number"
+                    pattern="[0-9+\-\s()]{7,20}"
+                    required
+                >
+
+            </div>
+
+            <div class="contact-message">
+                <textarea
+                    name="message"
+                    placeholder="Type your message here"
+                    aria-label="Your message"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="contact-submit">
+                <button type="submit">
+                    Send enquiry <span>›</span>
+                </button>
+            </div>
+
+            <p class="contact-status" id="contactStatus"
+               aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- HRIFY FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-copyright">
+        <p>© HRIFY Inc. All Rights Reserved.</p>
+    </div>
+
+    <nav class="footer-links">
+        <a href="#contact">Contact Us</a>
+        <a href="https://jahnavi-boopathy.github.io/hrify/disclaimer.html">Disclaimer</a>
+        <a href="https://jahnavi-boopathy.github.io/hrify/privacy-policy.html">Privacy Policy</a>
+    </nav>
+
+</footer>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

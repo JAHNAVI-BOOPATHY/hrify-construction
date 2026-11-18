@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d11">
+    <meta name="description" content="Discover the clients and partners who trust HRIFY Constructions.">
+    <title>Our Clients | HRIFY Constructions</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* CLIENTS HERO */
+        .clients-hero {
+            position: relative;
+            min-height: 570px;
+            display: flex;
+            align-items: center;
+            padding: 150px 8% 80px;
+            color: #fff;
+            background:
+                linear-gradient(90deg, rgba(0, 15, 30, .88), rgba(0, 25, 45, .42)),
+                url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=85");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .clients-hero-content {
+            max-width: 850px;
+        }
+
+        .clients-label {
+            display: block;
+            margin-bottom: 22px;
+            color: #65c9ee;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        .clients-hero h1 {
+            margin-bottom: 25px;
+            font-size: clamp(45px, 6vw, 82px);
+            line-height: 1.1;
+        }
+
+        .clients-hero p {
+            max-width: 650px;
+            color: #e5edf2;
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+        /* TRUST WE BUILT */
+        .clients-trust {
+            padding: 100px 8%;
+            background: #fff;
+        }
+
+        .clients-trust-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            align-items: center;
+            gap: 75px;
+        }
+
+        .clients-trust-copy > span,
+        .clients-section-heading > span {
+            color: #0782ad;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .clients-trust-copy h2,
+        .clients-section-heading h2 {
+            margin: 18px 0;
+            color: #10171b;
+            font-size: clamp(36px, 4.5vw, 58px);
+            line-height: 1.15;
+        }
+
+        .clients-trust-copy p {
+            margin-bottom: 17px;
+            color: #555;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .clients-trust-visual {
+            position: relative;
+            min-height: 360px;
+            padding: 42px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+            background:
+                linear-gradient(135deg, rgba(3, 37, 55, .94), rgba(7, 130, 173, .82)),
+                url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85") center/cover;
+        }
+
+        .clients-trust-visual::after {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            right: -75px;
+            bottom: -90px;
+            border: 1px solid rgba(255,255,255,.25);
+            border-radius: 50%;
+            box-shadow: 0 0 0 28px rgba(255,255,255,.05),
+                        0 0 0 58px rgba(255,255,255,.04);
+        }
+
+        .clients-trust-visual strong {
+            position: relative;
+            z-index: 1;
+            display: block;
+            max-width: 360px;
+            font-size: clamp(30px, 3.5vw, 43px);
+            line-height: 1.2;
+        }
+
+        .clients-trust-visual p {
+            position: relative;
+            z-index: 1;
+            max-width: 350px;
+            margin-top: 18px;
+            color: #e4f2f8;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* OUR CLIENTS / PLACEHOLDER LOGOS */
+        .clients-partners {
+            padding: 95px 8% 105px;
+            background: #f5f7f8;
+        }
+
+        .clients-partners-container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .clients-section-heading {
+            max-width: 760px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .clients-section-heading p {
+            margin-top: 16px;
+            color: #5c6469;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .clients-logo-list {
+            display: grid;
+            gap: 18px;
+        }
+
+        .clients-logo-row {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .clients-logo-card {
+            min-height: 145px;
+            padding: 25px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 9px;
+            background: #fff;
+            border: 1px solid #e3e8eb;
+            transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+        }
+
+        .clients-logo-card:hover {
+            transform: translateY(-6px);
+            border-color: #0782ad;
+            box-shadow: 0 12px 30px rgba(8, 45, 65, .08);
+        }
+
+        .clients-logo-mark {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0782ad;
+            background: #e9f5f9;
+            font-size: 21px;
+            font-weight: 800;
+            border-radius: 50%;
+        }
+
+        .clients-logo-card strong {
+            color: #24343d;
+            font-size: 15px;
+            letter-spacing: 1.2px;
+            text-align: center;
+        }
+
+        .clients-logo-card small {
+            color: #929ba0;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        .clients-placeholder-note {
+            margin-top: 25px;
+            color: #7b858b;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* CONTACT BANNER */
+        .clients-contact {
+            padding: 65px 8%;
+            color: #fff;
+            background: #071b27;
+        }
+
+        .clients-contact-container {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+        }
+
+        .clients-contact-copy span {
+            color: #65c9ee;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .clients-contact-copy h2 {
+            margin-top: 12px;
+            font-size: clamp(28px, 3.5vw, 42px);
+            line-height: 1.2;
+        }
+
+        .clients-contact-copy p {
+            margin-top: 12px;
+            color: #c5d0d6;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .clients-contact-button {
+            flex-shrink: 0;
+            display: inline-block;
+            padding: 15px 27px;
+            color: #fff;
+            background: #0782ad;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            transition: background .3s, transform .3s;
+        }
+
+        .clients-contact-button:hover {
+            background: #005d80;
+            transform: translateY(-3px);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .clients-trust-container {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .clients-trust-visual {
+                min-height: 300px;
+            }
+
+            .clients-logo-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 650px) {
+            .clients-hero {
+                min-height: 530px;
+                padding: 130px 6% 65px;
+            }
+
+            .clients-hero p {
+                font-size: 16px;
+            }
+
+            .clients-trust,
+            .clients-partners {
+                padding: 65px 6%;
+            }
+
+            .clients-trust-visual {
+                min-height: 270px;
+                padding: 28px;
+            }
+
+            .clients-logo-row {
+                gap: 12px;
+            }
+
+            .clients-logo-card {
+                min-height: 125px;
+                padding: 18px 10px;
+            }
+
+            .clients-contact {
+                padding: 55px 6%;
+            }
+
+            .clients-contact-container {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .clients-logo-row {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .clients-logo-card strong {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SAME HEADER AS INDEX.HTML -->
+    <header class="header" id="header">
+        <a href="index.html" class="logo">
+            <img src="assets/images/hrify-logo.png" alt="HRIFY Constructions">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a class="active" href="clients.html">CLIENTS</a>
+            <a href="careers.html">CAREERS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="clients-hero">
+            <div class="clients-hero-content">
+                <span class="clients-label">OUR CLIENTS &amp; PARTNERS</span>
+                <h1>Built on Trust.<br>Strengthened by Partnerships.</h1>
+                <p>
+                    Strong partnerships are at the heart of every successful project.
+                    We value the relationships we build and the trust our clients place
+                    in HRIFY Constructions.
+                </p>
+            </div>
+        </section>
+
+        <!-- TRUST WE BUILT SECTION -->
+        <section class="clients-trust">
+            <div class="clients-trust-container">
+                <div class="clients-trust-copy">
+                    <span>TRUST WE BUILT</span>
+                    <h2>Relationships That Build a Stronger Future</h2>
+                    <p>
+                        Every successful project begins with understanding, collaboration
+                        and trust. At HRIFY Constructions, we work closely with our
+                        clients and partners to turn ideas into dependable outcomes.
+                    </p>
+                    <p>
+                        We believe lasting relationships are built through clear
+                        communication, consistent commitment and a shared focus on
+                        quality. Our approach is centred on creating value at every
+                        stage of the journey.
+                    </p>
+                </div>
+
+                <div class="clients-trust-visual">
+                    <strong>Partnerships Built Around Progress.</strong>
+                    <p>
+                        Working together with a shared vision, purpose and commitment
+                        to excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR CLIENTS SECTION -->
+        <section class="clients-partners">
+            <div class="clients-partners-container">
+                <div class="clients-section-heading">
+                    <span>OUR CLIENTS</span>
+                    <h2>Trusted Partnerships. Shared Success.</h2>
+                    <p>
+                        We are proud of the relationships that inspire us to deliver
+                        better work every day. Here are some of the organisations and
+                        partners whose logos will be featured here.
+                    </p>
+                </div>
+
+                <div class="clients-logo-list">
+                    <!-- Replace these sample cards with actual client logos -->
+                    <div class="clients-logo-row">
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">A</div>
+                            <strong>CLIENT LOGO 01</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">B</div>
+                            <strong>CLIENT LOGO 02</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">C</div>
+                            <strong>CLIENT LOGO 03</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">D</div>
+                            <strong>CLIENT LOGO 04</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                    </div>
+
+                    <div class="clients-logo-row">
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">E</div>
+                            <strong>CLIENT LOGO 05</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">F</div>
+                            <strong>CLIENT LOGO 06</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">G</div>
+                            <strong>CLIENT LOGO 07</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">H</div>
+                            <strong>CLIENT LOGO 08</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                    </div>
+
+                    <div class="clients-logo-row">
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">I</div>
+                            <strong>CLIENT LOGO 09</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">J</div>
+                            <strong>CLIENT LOGO 10</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">K</div>
+                            <strong>CLIENT LOGO 11</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                        <div class="clients-logo-card">
+                            <div class="clients-logo-mark">L</div>
+                            <strong>CLIENT LOGO 12</strong>
+                            <small>YOUR PARTNER</small>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="clients-placeholder-note">
+                    Sample placeholders shown for layout purposes — replace with approved client logos.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT US BANNER -->
+        <section class="clients-contact">
+            <div class="clients-contact-container">
+                <div class="clients-contact-copy">
+                    <span>LET'S BUILD TOGETHER</span>
+                    <h2>Have a Project in Mind?</h2>
+                    <p>Connect with our team and let's explore how we can work together.</p>
+                </div>
+                <a href="contact.html" class="clients-contact-button">CONTACT US &nbsp; ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- SAME FOOTER AS INDEX.HTML / CAREERS.HTML -->
+    <footer class="site-footer">
+        <div class="footer-copyright">
+            <p>© HRIFY Inc. All Rights Reserved.</p>
+        </div>
+
+        <nav class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="https://jahnavi-boopathy.github.io/hrify/disclaimer.html">Disclaimer</a>
+            <a href="https://jahnavi-boopathy.github.io/hrify/privacy-policy.html">Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <!-- EXISTING WEBSITE JAVASCRIPT -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
